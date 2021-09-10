@@ -1,0 +1,52 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card-container {
+  width: 700px;
+  height: 400px;
+  background: url("images/orange-3134148_1280.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container .card {
+  width: 200px;
+  margin: 0 32px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding-bottom: 24px;
+  height: 210px;
+  transition: all 400ms;
+}
+
+.card-container .card:hover {
+  height: 260px;
+}
+
+.card-container .card .photo img {
+  width: 100%;
+}
+
+.card-container .card .content {
+  padding: 0 24px;
+}
+
+.card-container .card .social img {
+  height: 26px;
+}
+
+.card-container .card .social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
